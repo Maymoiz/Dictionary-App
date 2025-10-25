@@ -19,7 +19,7 @@ export default function App() {
    
    <main>
     <div>
-    <Dictionary />
+    <Dictionary defaultkeyword="sunset"/>
     </div>
    </main>
 

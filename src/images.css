@@ -1,0 +1,16 @@
+.WordImages {
+  margin-top: 30px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+

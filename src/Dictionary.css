@@ -74,3 +74,16 @@ button:hover {
   font-size: 16px;
   line-height: 1.5;
 }
+.Phonetic {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.phonetic {
+  font-size: 20px;
+  color: #6c63ff;
+  font-style: italic;
+}
+
