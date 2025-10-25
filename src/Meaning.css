@@ -1,0 +1,12 @@
+.Meaning {
+  margin-bottom: 20px;
+  padding: 12px;
+  background-color: #f0f0ff;
+  border-left: 4px solid #6c63ff;
+  border-radius: 8px;
+}
+
+.Meaning p {
+  margin: 6px 0;
+  font-size: 15px;
+}

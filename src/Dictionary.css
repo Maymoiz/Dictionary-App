@@ -1,7 +1,76 @@
-.Dictionary form{
-    text-align: center;
-    margin: 10px;
+.Meaning {
+  margin-bottom: 20px;
+  padding: 12px;
+  background-color: #f0f0ff;
+  border-left: 4px solid #6c63ff;
+  border-radius: 8px;
 }
-a{
-    text-decoration: none;
+
+.Definition {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.Phonetic {
+  font-size: 18px;
+  color: #6c63ff;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.Dictionary {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="search"] {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+input[type="search"]:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5548d9;
+}
+
+.Results h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+
+.Results p {
+  margin: 6px 0;
+  font-size: 16px;
+  line-height: 1.5;
 }

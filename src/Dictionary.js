@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './Dictionary.css';
 import axios from "axios";
+import Meaning from "./Meaning";
+import Phonetic from "./Phonetic";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState("");
@@ -11,7 +13,6 @@ export default function Dictionary() {
   }
 
   function handleResponse(response) {
-    console.log(response.data);
     setResult(response.data);
   }
 
@@ -37,7 +38,10 @@ export default function Dictionary() {
       {result && (
         <div className="Results">
           <h2>{result.word}</h2>
-          <p>{result.meanings.definition}</p> {/* You’ll likely need to adjust this based on the actual API structure */}
+          <Phonetic phonetic={result.phonetic} />
+          {result.meanings.map((meaning, index) => (
+            <Meaning key={index} meaning={meaning} />
+          ))}
         </div>
       )}
     </div>
